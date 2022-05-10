@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal Bikeshare - Sign in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+
+        .logo {
+            display: block;
+            width: 25%;
+            margin-left: 40%;
+            margin-right: auto;
+            margin-top: 2%;
+            padding-bottom: 2%;
+
+        }
+
+        .col-9 {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dropdown-toggle {
+            float: right;
+        }
+
+        .smallmenu {
+            width: 5em;
+            height: auto;
+            padding: none;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        @media screen and (max-width:810px){
+            .smallmenu {
+                width: 2em;
+            }
+
+            .btn-success {
+                font-size: 1em;
+            }
+        }
+        
+        .email {
+            background-color: #1D70B8;
+            text-align: center;
+            padding-top: 0.5em;
+            padding-bottom: 0.2em;
+            border-radius: 2em;
+            color: white;
+            max-width: 45em;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .tel {
+            background-color: #1D70B8;
+            text-align: center;
+            padding-top: 0.5em;
+            padding-bottom: 0.2em;
+            border-radius: 2em;
+            color: white;
+            vertical-align: middle;
+            max-width: 45em;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .spacer {
+            color: #33281b00;
+            font-size: 10px;
+        }
+
+        .profileimg {
+            width: 5em;
+            height: auto;
+            padding-bottom: 1em;
+ 
+        }
+
+        .namecontainer {
+            text-align: center;
+            color: #FF8A00;
+        }
+
+        .btn-primary {
+            text-align: center;
+            width: 50%;
+            margin: 3%;
+            border-radius: 2em;
+        }
+
+        .smalloptionscontainer, .smalloptionscontainer2, .smalloptionscontainer3, .smalloptionscontainer4 {
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #signoutbutton {
+            background-color: #81C5FF;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            margin: 5em;
+        }
+
+        #signoutbutton:hover {
+            background-color: #1D70B8;
+            color: white;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            left: 20%;
+            bottom: 0;
+            width: 60%;
+            background-color: rgb(221, 221, 221);
+            color: rgb(173, 173, 173);
+            text-align: center;
+        }
+
+        .footerinfo {
+            padding-top: 0.5em;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-9">
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="elements/menu.png" class="smallmenu" alt="menu icon">
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="map.html">Ride</a></li>
+                      <li><a class="dropdown-item" href="pedalpass.html">PedalPass</a></li>
+                      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="wallet.html">Wallet</a></li>
+                      <li><a class="dropdown-item" href="help.html">Help</a></li>
+                      <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                    </ul>
+                </div>
+
+                <img class="logo" src="elements/pedallogo.png" alt="pedal logo">
+
+                <div class="profileinfocontainer">
+                    <div class="namecontainer">
+                        <img src="elements/profile icon.png" class="profileimg" alt="Profile Image">
+                        <h1>Hi, Alex Walters</h1>
+                    </div>
+
+                    <div class="spacer">
+                        <p>spacer <br> spacer <br> spacer</p>
+                    </div>
+
+
+                    <div class="emailtelcontainer">
+                        <div class="email">
+                            <p>alexwalters@pedal.co.uk</p>
+                        </div>
+
+                        <div class="spacer">
+                            <p>spacer</p>
+                        </div>
+
+                        <div class="tel">
+                            <p>+44 7950 556235</p>
+                            <div class="telbutton">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spacer">
+                        <p>spacer <br> spacer <br> spacer</p>
+                    </div>
+
+
+                    <div class="smalloptionscontainer">
+                        <a class="btn btn-primary" href="#" role="button">View Reciepts</a>
+                    </div>
+
+                    <div class="smalloptionscontainer2">
+                        <a class="btn btn-primary" href="#" role="button">Language</a>
+                    </div>
+
+                    <div class="smalloptionscontainer3">
+                        <a class="btn btn-primary" href="socials.html" role="button">Socials</a>
+                    </div>
+
+                    <div class="smalloptionscontainer4">
+                        <a class="btn btn-primary" id="signoutbutton" href="index.html" role="button">Sign out</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p class="footerinfo">&copy Pedal 2022</p>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

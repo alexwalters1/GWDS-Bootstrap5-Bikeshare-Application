@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal Bikeshare - Sign in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+
+        .logo {
+            display: block;
+            width: 25%;
+            margin-left: 40%;
+            margin-right: auto;
+            margin-top: 2%;
+            padding-bottom: 2%;
+
+        }
+
+        .col-9 {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dropdown-toggle {
+            float: right;
+        }
+
+        .smallmenu {
+            width: 5em;
+            height: auto;
+            padding: none;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        @media screen and (max-width:810px){
+            .smallmenu {
+                width: 2em;
+            }
+
+            .btn-success {
+                font-size: 1em;
+            }
+        }
+        
+        .payment, .vouchers, .credits, .pedalpass {
+            background-color: #1D70B8;
+            text-align: center;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 2em;
+            color: white;
+            max-width: 45em;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .spacer {
+            color: #33281b00;
+            font-size: 10px;
+        }
+
+        .nestcontents {
+            background-color: #81C5FF;
+            border-radius: 1em;
+        }
+
+        #paymentbutton, #pedalpassbutton, #redeembutton {
+            background-color: #81C5FF;
+            border: none;
+            color: white;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 1em;
+        }
+
+        #paymentbutton:hover, #pedalpassbutton:hover, #redeembutton:hover {
+            background-color: #17568d;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            left: 20%;
+            bottom: 0;
+            width: 60%;
+            background-color: rgb(221, 221, 221);
+            color: rgb(173, 173, 173);
+            text-align: center;
+        }
+
+        .footerinfo {
+            padding-top: 0.5em;
+        }
+        
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-9">
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="elements/menu.png" class="smallmenu" alt="menu icon">
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="map.html">Ride</a></li>
+                      <li><a class="dropdown-item" href="pedalpass.html">PedalPass</a></li>
+                      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="wallet.html">Wallet</a></li>
+                      <li><a class="dropdown-item" href="help.html">Help</a></li>
+                      <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                    </ul>
+                </div>
+
+                <img class="logo" src="elements/pedallogo.png" alt="pedal logo">
+
+                <div class="walletcontainer">
+
+
+                    <div class="contents">
+                        <div class="payment">
+                            <p>Active payment method</p>
+                            <div class="nestcontents">
+                                <p>No current active payment method</p>
+                            </div>
+                            <a class="btn btn-primary" id="paymentbutton" href="" role="button">Add new</a>
+                        </div>
+
+                        <div class="spacer">
+                            <p>spacer</p>
+                        </div>
+
+                        <div class="pedalpass">
+                            <p>PedalPass</p>
+                            <div class="nestcontents">
+                                <p>No active pass</p>
+                            </div>
+                            <a class="btn btn-primary" id="pedalpassbutton" href="pedalpass.html" role="button">Get a pass</a>
+                        </div>
+
+                        <div class="spacer">
+                            <p>spacer</p>
+                        </div>
+
+                        <div class="vouchers">
+                            <p>Vouchers</p>
+                            <div class="nestcontents">
+                                <p>No vouchers available</p>
+                            </div>
+                            <a class="btn btn-primary" id="redeembutton" href="" role="button">Redeem</a>
+                        </div>
+
+                        <div class="spacer">
+                            <p>spacer</p>
+                        </div>
+
+                        <div class="credits">
+                            <p>Pedal credits</p>
+                            <div class="nestcontents">
+                                <p>Balance: <br> $0.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="spacer">
+                        <p>spacer <br> spacer <br> spacer</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p class="footerinfo">&copy Pedal 2022</p>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
