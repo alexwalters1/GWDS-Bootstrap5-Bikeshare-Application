@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal Bikeshare - Sign in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+
+        .logo {
+            display: block;
+            width: 25%;
+            margin-left: 40%;
+            margin-right: auto;
+            margin-top: 2%;
+            padding-bottom: 2%;
+
+        }
+
+        .col-9 {
+            background-image: url(elements/pedalpassbackg.png);
+            background-color: #d37203;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .scanbuttoncontainer {
+            text-align: center;
+            padding-top: 82%;
+            padding-bottom: 2%;
+        }
+
+        .dropdown-toggle {
+            float: right;
+        }
+
+        .smallmenu {
+            width: 5em;
+            height: auto;
+            padding: none;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        @media screen and (max-width:810px){
+            .smallmenu {
+                width: 2em;
+            }
+
+            .btn-success {
+                font-size: 1em;
+            }
+        }
+
+        .qrlogo {
+            width: 15%;
+            height: auto;
+            margin-right: 5%;
+        }
+
+        .annual40, .annual30 {
+            background-color: rgba(224, 240, 255, 0.349);
+            border-radius: 5em;
+            font-size: 12px;
+            padding: 3em;
+            text-align: center;
+        }
+
+        .annual40 {
+            padding-bottom: 1em;
+        
+        }
+
+        .spacer {
+            color: #33281b00;
+            font-size: 0.5px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 20%;
+            bottom: 0;
+            width: 60%;
+            background-color: rgb(221, 221, 221);
+            color: rgb(173, 173, 173);
+            text-align: center;
+        }
+
+        .footerinfo {
+            padding-top: 0.5em;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-9">
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="elements/menu.png" class="smallmenu" alt="menu icon">
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="map.html">Ride</a></li>
+                      <li><a class="dropdown-item" href="pedalpass.html">PedalPass</a></li>
+                      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="wallet.html">Wallet</a></li>
+                      <li><a class="dropdown-item" href="help.html">Help</a></li>
+                      <li><a class="dropdown-item" href="signin.html">Sign out</a></li>
+                    </ul>
+                </div>
+
+                <img class="logo" src="elements/pedalpasslogo.png" alt="pedal logo">
+
+
+                <div class="membershipcontainer">
+                    <div class="annual30">
+                        <img src="elements/annual30logo.png" class="thirtylogo" alt="Annual 30 Membership">
+                        <h3>Annual 30 Membership <br> $99 / year</h3>
+                        <p>
+                            Join as an Annual 30 Member for only $99 per year. Enjoy multiple 30-minute, 
+                            station-to-station trips all year round for less than $10 a month or 
+                            as little as 30¢ a day
+                        </p>
+
+                        <p2>
+                            *The first 30 minutes of each ride are included in the membership. After 30 minutes extra usage fees apply, see Overage Fees below.
+                            <br> <br>
+                        </p2>
+                        <button type="button" class="btn btn-primary">Find out more</button>
+                    </div>
+                    <div class="spacer">
+                        <p>spacer</p>
+                    </div>
+                    <div class="annual40">
+                        <img src="elements/annual40logo.png" class="fortylogo" alt="Annual 40 Membership">
+                        <h3>Annual 40 Membership <br> $115 / year</h3>
+                        <p>
+                            More flexibility, More ride time <br> <br>
+                            Join as an Annual 45 Member for only $115 per year. Enjoy unlimited 45 minute, 
+                            station-to-station trips all year round.
+                        </p>
+
+                        <p2>
+                            *The first 45 minutes of each ride are included in the membership. After 45 minutes extra usage fees apply, see Overage Fees below.
+                            <br> <br>
+                        </p2>
+                        <button type="button" class="btn btn-primary">Find out more</button>
+                    </div>
+                    <div class="spacer">
+                        <p>spacer</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p class="footerinfo">&copy Pedal 2022</p>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
